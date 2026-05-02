@@ -1,59 +1,115 @@
-# RandomNamePicker
+# 🎡 Random Name Picker 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+A simple beginner-friendly Angular web application that allows users to add names and randomly pick a winner by clicking a **SPIN** button.
 
-## Development server
+This project was created to learn and practice Angular basics such as components, data binding, directives, and event handling.
 
-To start a local development server, run:
+---
 
-```bash
+## 🚀 Features
+
+• Add names to a list  
+• Display names dynamically  
+• Randomly select a winner  
+• Clean and simple user interface  
+• Beginner friendly Angular code  
+
+---
+
+## 🛠️ Technologies Used
+
+- Angular (Standalone Components)
+- TypeScript
+- HTML
+- CSS
+
+---
+
+## 📂 Project Structure
+
+random-name-picker/
+│
+├── src/
+│   ├── app/
+│   │   ├── app.ts        → Main component logic
+│   │   ├── app.html      → UI template
+│   │   ├── app.css       → Component styles
+│   │
+│   ├── main.ts           → Application bootstrap file
+│   ├── styles.css        → Global styles
+│
+├── package.json
+├── angular.json
+└── README.md
+
+---
+
+## ▶️ How to Run the Project
+
+### Step 1: Install Angular CLI (if not installed)
+
+npm install -g @angular/cli
+
+### Step 2: Open Project Folder
+
+cd random-name-picker
+
+### Step 3: Install Dependencies
+
+npm install
+
+### Step 4: Run the Application
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Step 5: Open in Browser
 
-## Code scaffolding
+http://localhost:4200
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🧠 How the Application Works
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. User enters a name in the input box.
+2. When the **Add** button is clicked, the name is stored in an array.
+3. Angular automatically displays the list using *ngFor directive.
+4. When the **SPIN** button is clicked:
+   - The app generates a random number using Math.random().
+   - That number is used as an index.
+   - The name at that index becomes the winner.
+5. The winner is displayed on the screen.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 📘 Angular Concepts Used
 
-To build the project run:
+- Standalone Components
+- Two-way Data Binding (ngModel)
+- Event Binding (click)
+- Structural Directives (*ngFor, *ngIf)
+- Arrays and Functions in TypeScript
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🎯 Learning Purpose
 
-## Running unit tests
+This project was built as a beginner Angular project to understand:
+- How Angular components work
+- How to bind data between UI and logic
+- How to handle user events
+- How to create simple interactive web apps
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 🔮 Future Improvements (Optional)
 
-## Running end-to-end tests
+- Add delete name button
+- Add spinning animation
+- Save names in local storage
+- Add colorful UI design
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 👩‍💻 Author
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Harshada Keste
